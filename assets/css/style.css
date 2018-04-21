@@ -1,0 +1,79 @@
+.backgroundColor {
+    background:#80afac;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.polaroid {
+    z-index: -1
+}
+.hangman {
+    width: 27%;
+    position: absolute;
+    left: 480px;
+    top: 520px;
+    /* z-index: -2; */
+}
+
+.edition {
+    width: 30%;
+    position: absolute;
+    left: 700px;
+    top: 500px;
+    /* z-index: -3; */
+}
+
+h2, h3, h5 {
+    padding: 18px;
+    background-color: transparent 50%;
+}
+
+#currentWord {
+    letter-spacing: 10px;
+}
+
+.pattern {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1
+}
+
+.whitebox {
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    position: absolute;
+    left: 15px;
+    top: 0px;
+    z-index: -1
+}
+
+.frame {
+    /* position: relative;
+    left: 120px;
+    top: 150px;
+    z-index: 1; */
+    position: relative;
+    top: 150px;
+    left: 120px;
+}
+
+.cameraPhoto {
+    /* position: relative;
+    left: 200px;
+    top: 100px;
+    z-index: 2; */
+
+    position: absolute;
+		top: 165px;
+        left: 135px;
+        height: 290px;
+        width: 290px;
+}
+
+h6 {
+    padding: 0%;
+    text-align: center;
+}

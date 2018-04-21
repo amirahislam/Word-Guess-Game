@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+       <meta charset="UTF-8">
+
+       <title>Camera Hangman</title>
+
+    
+       <link rel="stylesheet" href="assets/css/style.css" />
+       
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+    </head>
+
+    <body class="backgroundColor">
+        
+        
+        <div class="container">
+            <img src="assets/images/polaroid.jpeg" alt="Camera Hangman Polaroid">
+            
+            <img class="hangman" src="assets/images/hangman.png">
+            
+            <img class="edition" src="assets/images/edition.png">   
+
+            <!-- <img class="pattern" src="assets/images/flowers.png" width="1400px" height="800px"> -->
+
+            <!-- <img class="pattern" src="assets/images/pattern.png"> -->
+            <!-- <h2 id="pressKeyTryAgain">Press Any Key to Try Again!</h2> -->
+
+            <div class="row">
+                <div class="col-md-6">
+                
+                        <div style="position: relative; left: 0; top: 0;">
+                                <!-- <img class="whitebox" src="assets/images/glitter.png" width="570px" height="700px"> -->
+                                <img class="frame" src="assets/images/frame.png"/>
+                                <img class="cameraPhoto" id="cameraImage" src="" alt="" />
+                                
+                            </div>
+                <!-- <img class="cameraPhoto" src="assets/images/white.png" width="570px" height="700px"> -->
+                <img class="whitebox" src="assets/images/glitter.png" width="570px" height="700px"> 
+                <!-- <img class="frame" src="assets/images/frame.png"> -->
+                <!-- <img class="cameraPhoto" id="cameraImage" src="" alt="" /> -->
+
+                    
+                </div>
+
+                <div class="col-md-6">
+                    
+                    <h2>Press any Letter to Start!</h2>
+                    <h3>Wins</h3>
+                    <h5 id="totalWins"></h5>
+                    <h3>Current Word</h3>
+                    <h5 id="currentWord"></h5>
+                    <h3>Letters Guessed</h3>
+                    <h5 id="lettersGuessed"></h5>
+                    <h3>Guesses Remaining</h3>
+                    <h5 id="remainingGuesses"></h5>
+                    <h6>*PRESS ENTER FOR NEXT WORD*</h6>
+
+                    <img class="pattern" src="assets/images/stars.png" width="590px" height="700px">
+
+                </div>
+            </div>
+
+        </div>
+        <script src="assets/javascript/game.js" type="text/javascript"></script>
+        <script>
+                resetGame();
+                updateDisplay();
+        </script>
+    </body>
+
+</html>
